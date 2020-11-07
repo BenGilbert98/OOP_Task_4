@@ -3,6 +3,7 @@ class Calculator:
     def __init__(self):
         self.methods = ["Add", "Subtract", "Multiply", "Divide", "Divisible", "Area of Triangle", "Inch/Cm Conversion"]
 
+    # functions requiring num1 and num2
     def add(self, num1, num2):
         return print(f"{num1} + {num2} = ", num1 + num2)
 
@@ -21,9 +22,11 @@ class Calculator:
         elif num1 % num2 != 0:
             return print(f"{num1} is not divisible by {num2}")
 
+    # functions requiring a and b
     def area_of_triangle(self, a, b):
         return print(0.5 * a * b)
 
+    # functions requiring cm or inch
     def conversion_cm_inch(self, cm):
         return print(f"{cm}cm is equal to", cm/2.54, "inches")
 
